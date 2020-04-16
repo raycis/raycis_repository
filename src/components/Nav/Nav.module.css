@@ -1,0 +1,43 @@
+.nav{
+	grid-area: nav;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+	height: 350px;
+}
+
+
+.item{
+	margin-left: 30px;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 16px;
+	height: 30px;
+}
+.item a{
+	text-decoration: none;
+	color: #000;
+	position: relative;
+	transition: all ease .8s;
+}
+.item a:after{
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: blue;
+	left: 0;
+	bottom: -3px;
+	position: absolute;
+	opacity: 0;
+	transition: all ease .8s;
+}
+
+.item a:hover{
+	opacity: 1;
+	font-size: 18px;
+	color: blue;
+	font-weight: 700;
+}
+.item a:hover:after{
+	opacity: 1;
+}
