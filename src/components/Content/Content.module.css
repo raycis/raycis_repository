@@ -1,7 +1,65 @@
-.content{
-	grid-area: cont;
-	background-color: #fff;
-	border: 1px solid #000;
-	border-radius: 10px;
 
+.info{
+	display: grid;
+	grid-template-areas: "ava avaInfo"
+						"post post";
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 1fr 500px;
+}
+.ava{
+	grid-area: ava;
+	
+
+	
+}
+.ava img{
+	margin-top: 20px;
+	margin-left: 20px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	border: 3px solid #000;
+}
+
+.avaInfo{
+	grid-area: avaInfo;
+	margin-top: 20px;
+	
+
+}
+
+.name{
+	font-size: 16px;
+	font-weight: 700;
+	
+}
+.status{
+	margin-top: 10px;
+	width: 200px;
+	font-size: 14px;
+	color: #000;
+
+}
+.post{
+	grid-area: post;
+	
+}
+@media  (max-width: 700px){
+		.info{
+		display: grid;
+		grid-template-areas: "ava"
+							"avaInfo"
+							"post";
+		grid-template-columns: 100%;
+		grid-template-rows: 300px 70px 500px;
+		
+	}
+	.ava img{
+		margin-left: 140px;
+
+	}
+
+	.avaInfo{
+		padding-left: 110px;
+	}
 }
