@@ -6,6 +6,11 @@
 	height: 350px;
 }
 
+.item a.active{
+	font-size: 18px;
+	color: blue;
+	font-weight: 700;
+}
 
 .item{
 	margin-left: 30px;
@@ -39,5 +44,9 @@
 	font-weight: 700;
 }
 .item a:hover:after{
+	opacity: 1;
+}
+
+.item a.active:after{
 	opacity: 1;
 }

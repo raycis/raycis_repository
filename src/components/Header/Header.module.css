@@ -1,57 +1,40 @@
+
 .header{
-	grid-area: header;
-	background-color: #fff;
-	border: 1px solid #000;
-	border-radius: 10px;
-	padding-top: 3px;
 	display: grid;
-	grid-template-columns: 7% 83% 10%;
-		
-}
-.header img{
-	width: 80px;
-	height: 40px;
-	
+	grid-template-columns: 73px 10fr 1fr;
+	grid-template-areas: "item__1 item__2 item__3";
 }
 
-.logo{
-	font-size: 20px;
-	margin-left: -10px;
-	font-weight: 700;
+.item__1 img{
+	grid-area: item__1;
+	width: 70px;
+	height: 40px;
+	padding-top: 3px;
+	padding-left: 3px;
 }
-.logo__c{
-	color: blue;
-	font-size: 25px;
-}
+
 
 .item__2{
-	margin-top: 3px;
+	grid-area: item__2;
+	padding-top: 15px;
 }
-.item__3{
-	margin-top: 10px;
-}
-
-.ht{
-	font-size: 16px;
-	font-weight: 700;
+.logo{
+	font-size: 20px;
+	color: #000;
 
 }
-.ht__r{
-	font-size: 16px;
-	font-weight: 700;
+.logo__c{
 	color: red;
 }
 
-@media  (max-width: 700px){
-	.header{
-	
-	background-color: #fff;
-	border: 1px solid #000;
-	border-radius: 10px;
-	padding-top: 3px;
-	display: grid;
-	grid-template-columns: 80px 300px 70px;
-		
+.item__3{
+	grid-area: item__3;
+	padding-top: 15px;
 }
-	
+.ht{
+	font-size: 16px;
+	color: #000;
+}
+.ht__r{
+	color: red;
 }

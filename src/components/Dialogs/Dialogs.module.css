@@ -1,0 +1,40 @@
+.dislogs{
+	display: grid;
+	grid-template-areas: "name message";
+	grid-template-columns: 20% 80%;
+
+}
+
+.name{
+	grid-area: name;
+	position: relative;
+}
+.name:after{
+	content: "";
+	width: 3px;
+	height: 100%;
+	background-color: #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+
+
+}
+
+.name__item{
+	text-align: center;
+	font-size: 20px;
+	line-height: 100px;
+}
+
+.message{
+	grid-area: message;
+
+}
+.massage__item{
+	border: 1px solid blue;
+	margin: 50px 200px;
+	padding: 30px;
+	
+}

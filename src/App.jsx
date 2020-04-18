@@ -13,9 +13,11 @@ const App = () => {
     return (
       <BrowserRouter>
       <div className='app-wrapper'>
-       	<Header />
+            <div className='app-wrapper__header'>
+       	    <Header />
+            </div>
        	<Nav />
-       	  <div className='app-wrapper__click'>
+       	  <div className='app-wrapper__cont'>
                   <Route path='/content' component={Content} />
                   <Route path='/dialogs'component={Dialogs} />
                   <Route path='/foto'component={Foto} />

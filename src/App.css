@@ -11,9 +11,15 @@
 	width: 1200px;
 	font-family: 'Nanum Gothic', sans-serif;
 }
+.app-wrapper__header{
+	grid-area: header;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+			
+}
 
-
-.app-wrapper__click{
+.app-wrapper__cont{
 	grid-area: cont;
 	background-color: #fff;
 	border: 1px solid #000;
