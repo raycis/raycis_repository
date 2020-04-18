@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header/Header.jsx';
 import Nav from './components/Nav/Nav.jsx';
-import Content from './components/Content/Content.jsx';
+import Myprofile from './components/Myprofile/Myprofile.jsx';
 import Dialogs from './components/Dialogs/Dialogs.jsx';
 import Foto from './components/Foto/Foto.jsx';
 import Friends from'./components/Friends/Friends.jsx';
@@ -18,7 +18,7 @@ const App = () => {
             </div>
        	<Nav />
        	  <div className='app-wrapper__cont'>
-                  <Route path='/content' component={Content} />
+                  <Route path='/myprofile' component={Myprofile} />
                   <Route path='/dialogs'component={Dialogs} />
                   <Route path='/foto'component={Foto} />
                   <Route path='/friends'component={Friends} />
