@@ -9,7 +9,12 @@ import Friends from'./components/Friends/Friends.jsx';
 import {BrowserRouter, Route} from 'react-router-dom';
 
 
-const App = () => {
+
+
+const App = (props) => {
+
+     
+ 
     return (
       <BrowserRouter>
       <div className='app-wrapper'>
@@ -18,10 +23,10 @@ const App = () => {
             </div>
        	<Nav />
        	  <div className='app-wrapper__cont'>
-                  <Route path='/myprofile' component={Myprofile} />
-                  <Route path='/dialogs'component={Dialogs} />
-                  <Route path='/foto'component={Foto} />
-                  <Route path='/friends'component={Friends} />
+                  <Route path='/myprofile' render={()=><Myprofile info={props.info.postMessage} />} />
+                  <Route path='/dialogs'render={()=><Dialogs infoName={props.info.personData} infoMessage={props.info.messageData} />} />
+                  <Route path='/foto'render={()=><Foto />} />
+                  <Route path='/friends'render={()=><Friends infoName={props.info.personData}/>} />
        	  </div>
 		
       </div>

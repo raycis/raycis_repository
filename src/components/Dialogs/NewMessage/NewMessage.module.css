@@ -1,0 +1,26 @@
+.area{
+	border: 1px solid #000;
+	height: 100px;
+	margin: 15px 15px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.textarea{
+	height: 60px;
+	font-size: 16px;
+	padding: 10px 10px;
+	width: 100%;
+	border-radius: 10px;
+	margin: 10px 10px;
+	
+}
+.btn{
+	border-radius: 10px;
+	margin: 10px 10px;
+	background-color: blue;
+	color: #fff;
+	font-size: 18px;
+}

@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
+import state from './redax/state.js';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App info={state}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

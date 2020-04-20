@@ -1,15 +1,18 @@
 .dislogs{
 	display: grid;
-	grid-template-areas: "name message";
+	grid-template-areas: "name message"
+						"name new";
+							
 	grid-template-columns: 20% 80%;
+	
 
 }
 
-.name{
+.person{
 	grid-area: name;
 	position: relative;
 }
-.name:after{
+.person:after{
 	content: "";
 	width: 3px;
 	height: 90%;
@@ -21,31 +24,11 @@
 
 }
 
-.name__item{
-	text-align: center;
-	font-size: 20px;
-	line-height: 100px;
-
-}
-.name__item a{
-	text-decoration: none;
-	font-size: 18px;
-	color: #000;
-}
-.name__item a.active{
-	color: blue;
-	font-weight: 700;
-	font-size: 20px;
-}
-
-
 .message{
 	grid-area: message;
 
 }
-.massage__item{
-	border: 1px solid blue;
-	margin: 50px 200px;
-	padding: 30px;
-	
+
+.new{
+	grid-area: new;
 }

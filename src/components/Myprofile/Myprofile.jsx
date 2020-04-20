@@ -1,9 +1,18 @@
 import React from 'react';
 import s from './Myprofile.module.css';
-import Posts from './Posts/Posts.jsx';
-import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
 
-const Myprofile = () =>{
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
+import NewPost from './NewPost/NewPost.jsx';
+import Posts from './Posts/Posts.jsx';
+
+
+
+
+const Myprofile = (props) =>{
+
+
+let postElements = props.info.map(m => <Posts  message = {m.message} />);
+	
 	return(
 		<div className={s.content}>
 			
@@ -11,13 +20,12 @@ const Myprofile = () =>{
 				<div className={s.profile}>
 					<ProfileInfo />
 				</div>
+				<div className='s.newPost'>
+					<NewPost />
+				</div>
+
 				<div className={s.post} >
-					<Posts messsge='Posts one'/>
-					<Posts messsge='Posts tu'/>
-					<Posts messsge='Posts 3'/>
-					<Posts messsge='Posts 4'/>
-					<Posts name='Перейдите на страницу пользователя, чтобы посмотреть публикации или отправить сообщение.О себе: YouTube. 84M likes. The latest and greatest music videos, trends and channels from YouTube.'/>
-					
+					{postElements}
 				</div>
 				
 			</div>
